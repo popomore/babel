@@ -77,6 +77,7 @@ export default {
   // been ran
   "es6.tailCall":                          require("./es6/tail-call"),
   _shadowFunctions:                        require("./internal/shadow-functions"),
+  "es6.spec.noNewArrow":                   require("./es6/spec.no-new-arrow"),
   "es3.propertyLiterals":                  require("./es3/property-literals"),
   "es3.memberExpressionLiterals":          require("./es3/member-expression-literals"),
   "minification.memberExpressionLiterals": require("./minification/member-expression-literals"),
