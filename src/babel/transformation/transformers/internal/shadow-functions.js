@@ -22,8 +22,10 @@ function remap(path, key, create) {
   return id;
 }
 
-export function ThisExpression() {
-  return remap(this, "this", () => t.thisExpression());
+export function ThisExpression(node) {
+  if (!node._shadowedFunctionLiteral) {
+    return remap(this, "this", () => t.thisExpression());
+  }
 }
 
 export function ReferencedIdentifier(node) {

@@ -1,8 +1,10 @@
 "use strict";
 
+var _arrow;
+
 function _newArrowCheck(instance, arrowFn) { if (instance instanceof arrowFn) { throw new TypeError("Cannot instantiate an arrow function"); } }
 
-arr.map(function _arrow(x) {
+arr.map(_arrow = function (x) {
   _newArrowCheck(this, _arrow);
 
   return x * x;
